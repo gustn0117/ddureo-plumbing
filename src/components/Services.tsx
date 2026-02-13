@@ -5,7 +5,7 @@ import { Wrench, Building2, Home, Factory, Droplets, Phone, ArrowUpRight } from 
 import { useReveal } from "@/hooks/useReveal";
 
 const services = [
-  { icon: Wrench, title: "변기·싱크대 막힘", desc: "물 내려가는 속도가 더디거나 악취, 역류할 때! 전문 장비로 즉시 해결합니다.", accent: "from-primary-400 to-primary-600", tag: "BEST", tagColor: "bg-primary-400", image: "/images/drain-cleaning.jpeg" },
+  { icon: Wrench, title: "변기·싱크대 막힘", desc: "물 내려가는 속도가 더디거나 악취, 역류할 때! 전문 장비로 즉시 해결합니다.", accent: "from-primary-400 to-primary-600", tag: "BEST", tagColor: "bg-primary-400", image: "/images/toilet.jpg" },
   { icon: Building2, title: "상가 배관막힘", desc: "식당, 공공기관 등 많은 분들이 방문하시는 곳의 배관 문제를 해결합니다.", accent: "from-amber-400 to-amber-600", tag: null, tagColor: "", image: "/images/work-outdoor.jpeg" },
   { icon: Home, title: "주택·아파트 배관", desc: "반복되는 막힘, 노후배관 문제를 근본적으로 해결해드립니다.", accent: "from-emerald-400 to-emerald-600", tag: null, tagColor: "", image: "/images/sink-repair.jpeg" },
   { icon: Factory, title: "공장·산업시설", desc: "대형 산업시설 배관도 전문 장비로 확실하게 해결합니다.", accent: "from-navy-600 to-navy-800", tag: null, tagColor: "", image: "/images/ridgid-equipment.jpeg" },
@@ -41,9 +41,9 @@ export default function Services() {
 
         <div className="stagger grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {services.map((s, i) => (
-            <div key={i} className={`group relative bg-white rounded-3xl border border-surface-300/50 overflow-hidden card-lift hover-glow gradient-border-hover ${i === 0 ? "lg:col-span-2" : ""}`}>
-              <div className={`relative overflow-hidden ${i === 0 ? "aspect-[16/9]" : "aspect-[4/3]"}`}>
-                <Image src={s.image} alt={s.title} fill className="object-cover img-zoom" sizes={i === 0 ? "(max-width: 1024px) 100vw, 66vw" : "(max-width: 768px) 100vw, 33vw"} />
+            <div key={i} className="group relative bg-white rounded-3xl border border-surface-300/50 overflow-hidden card-lift hover-glow gradient-border-hover">
+              <div className="relative overflow-hidden aspect-[4/3]">
+                <Image src={s.image} alt={s.title} fill className="object-cover img-zoom" sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent" />
                 {s.tag && (
                   <div className="absolute top-4 left-4">

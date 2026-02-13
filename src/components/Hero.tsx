@@ -60,7 +60,7 @@ export default function Hero() {
               <span className="ping-ring absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-400"></span>
             </span>
-            <span className="text-primary-300 text-sm sm:text-base font-bold tracking-[0.2em] uppercase">
+            <span className="text-primary-300 text-4xl sm:text-5xl md:text-6xl font-black tracking-[0.2em] uppercase">
               막혔을땐
             </span>
           </div>

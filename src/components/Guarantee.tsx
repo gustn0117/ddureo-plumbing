@@ -1,6 +1,6 @@
 "use client";
 
-import { ShieldCheck, CircleDollarSign, FileCheck, Phone, ArrowRight } from "lucide-react";
+import { ShieldCheck, CircleDollarSign, Phone, ArrowRight } from "lucide-react";
 import { useReveal } from "@/hooks/useReveal";
 
 export default function Guarantee() {
@@ -26,8 +26,8 @@ export default function Guarantee() {
 
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="reveal text-center mb-20">
-          <span className="inline-flex items-center gap-2 bg-white/10 border border-white/10 text-primary-300 text-xs font-bold tracking-wider px-5 py-2.5 rounded-full mb-8">
-            <ShieldCheck className="w-3.5 h-3.5" />
+          <span className="inline-flex items-center gap-2 bg-white/10 border border-white/10 text-primary-300 text-sm sm:text-base font-bold tracking-wider px-6 py-3 rounded-full mb-8">
+            <ShieldCheck className="w-4 h-4" />
             배관구조대의 약속
           </span>
 
@@ -37,18 +37,17 @@ export default function Guarantee() {
           <h3 className="text-5xl sm:text-6xl md:text-8xl font-black text-white mb-8 text-glow shine-text">
             미해결시 <span className="neon-amber">₩0</span>
           </h3>
-          <p className="text-white/65 max-w-lg mx-auto leading-relaxed text-lg">
+          <p className="text-white/65 max-w-2xl mx-auto leading-relaxed text-xl sm:text-2xl">
             배관구조대는 고객님의 문제를 완벽하게 해결할 때까지 책임집니다.
             해결하지 못하면 비용을 청구하지 않습니다.
           </p>
         </div>
 
         {/* Three promises */}
-        <div className="stagger grid sm:grid-cols-3 gap-5 mb-14">
+        <div className="stagger grid sm:grid-cols-2 gap-5 mb-14 max-w-2xl mx-auto">
           {[
             { icon: ShieldCheck, title: "완벽 해결 보장", desc: "책임감 있는 작업으로 확실한 해결", color: "text-primary-300", bg: "bg-primary-400/10", border: "border-primary-400/15" },
             { icon: CircleDollarSign, title: "미해결시 전액 무료", desc: "해결 못하면 비용 부담 제로", color: "text-emerald-400", bg: "bg-emerald-400/10", border: "border-emerald-400/15" },
-            { icon: FileCheck, title: "추가 요금 없음", desc: "투명한 견적, 숨겨진 비용 없음", color: "text-amber-400", bg: "bg-amber-400/10", border: "border-amber-400/15" },
           ].map((item, i) => (
             <div key={i} className={`group relative rounded-2xl bg-white/[0.06] border ${item.border} p-8 text-center card-lift hover:bg-white/[0.1] transition-all duration-300`}>
               <div className={`w-16 h-16 rounded-2xl ${item.bg} flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300`}>
