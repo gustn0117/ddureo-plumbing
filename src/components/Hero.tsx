@@ -67,7 +67,7 @@ export default function Hero() {
 
           {/* Giant brand */}
           <h1 className="text-[15vw] sm:text-[12vw] md:text-[10vw] lg:text-[8vw] font-black leading-[1] tracking-tight mb-6 hero-brand shine-text">
-            뚜러배관케어
+            배관구조대
           </h1>
 
           {/* Subtitle */}

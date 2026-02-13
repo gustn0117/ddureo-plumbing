@@ -35,7 +35,7 @@ export default function Header() {
             <span className={`text-lg font-black tracking-tight leading-none transition-colors duration-500 ${
               scrolled ? "text-navy-800" : "text-white"
             }`}>
-              <span className={scrolled ? "text-gradient-animate" : ""}>뚜러배관케어</span>
+              <span className={scrolled ? "text-gradient-animate" : ""}>배관구조대</span>
             </span>
           </a>
 

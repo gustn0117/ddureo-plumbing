@@ -17,7 +17,7 @@ export default function Footer() {
                 <Droplets className="w-5 h-5 text-white" />
               </div>
               <div>
-                <span className="text-lg font-black text-white">뚜러배관케어</span>
+                <span className="text-lg font-black text-white">배관구조대</span>
                 <span className="text-white/50 text-xs ml-2">24시간 전문 배관 서비스</span>
               </div>
             </div>
@@ -72,7 +72,7 @@ export default function Footer() {
 
         <div className="mt-10 pt-6 border-t border-white/5">
           <p className="text-white/45 text-sm text-center">
-            &copy; 2026 뚜러배관케어. All rights reserved.
+            &copy; 2026 배관구조대. All rights reserved.
           </p>
         </div>
       </div>

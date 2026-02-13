@@ -24,7 +24,7 @@ export default function BeforeAfter() {
             Before & After
           </span>
           <h2 className="section-title">
-            <span className="text-gradient-animate">뚜러배관케어</span>의 해결 사례
+            <span className="text-gradient-animate">배관구조대</span>의 해결 사례
           </h2>
         </div>
 

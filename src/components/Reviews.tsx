@@ -5,7 +5,7 @@ import { Star, CheckCircle2, Quote, ArrowUpRight } from "lucide-react";
 import { useReveal } from "@/hooks/useReveal";
 
 const reviews = [
-  { name: "김O희", location: "서울 강남구", text: "처음 겪는 경우라 가격이나 비용 등 막막했는데, 뚜러배관케어에서 상담받고 빠르게 해결됐습니다. 친절하고 꼼꼼한 서비스에 감동했어요.", initial: "김" },
+  { name: "김O희", location: "서울 강남구", text: "처음 겪는 경우라 가격이나 비용 등 막막했는데, 배관구조대에서 상담받고 빠르게 해결됐습니다. 친절하고 꼼꼼한 서비스에 감동했어요.", initial: "김" },
   { name: "이O준", location: "경기 수원시", text: "기사님 빠르게 해결해주시고 저희가 바꿨어야 하던 수전까지 무료로 해주셔서 너무 감사했어요. 만족해서 기쁩니다!", initial: "이" },
   { name: "박O수", location: "인천 부평구", text: "대형 식당인데도 불구하고 차분하게 작업해주시고, 비용과 서비스 너무 만족합니다. 문제가 생기면 또 바로 연락하겠습니다.", initial: "박" },
   { name: "정O민", location: "부산 해운대구", text: "아내가 기사님 친절하고 잘 뚫어주신다고 하네요. 주변에도 소개 많이 해야겠어요. 감사합니다!", initial: "정" },
@@ -129,7 +129,7 @@ export default function Reviews() {
               ))}
             </div>
             <p className="text-gradient-animate font-bold text-lg">
-              뚜러배관케어는 해결 못할 시 금액을 받지 않습니다!
+              배관구조대는 해결 못할 시 금액을 받지 않습니다!
             </p>
           </div>
           <a href="tel:01039712272" className="inline-flex items-center gap-2 bg-primary-400 hover:bg-primary-300 text-white font-bold py-3 px-6 rounded-full transition-all duration-300 text-sm hover:shadow-glow">

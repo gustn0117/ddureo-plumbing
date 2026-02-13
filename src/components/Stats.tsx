@@ -30,7 +30,7 @@ export default function Stats() {
             수치로 증명합니다
           </span>
           <h2 className="section-title section-accent mx-auto w-fit">
-            <span className="text-gradient-animate">뚜러배관케어</span>의 실적
+            <span className="text-gradient-animate">배관구조대</span>의 실적
           </h2>
         </div>
 
@@ -81,7 +81,7 @@ export default function Stats() {
             ))}
           </div>
           <p className="text-navy-300 text-sm">
-            뚜러배관케어는 <span className="text-primary-500 font-bold">결과</span>로 신뢰를 증명합니다
+            배관구조대는 <span className="text-primary-500 font-bold">결과</span>로 신뢰를 증명합니다
           </p>
         </div>
       </div>

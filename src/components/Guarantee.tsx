@@ -28,7 +28,7 @@ export default function Guarantee() {
         <div className="reveal text-center mb-20">
           <span className="inline-flex items-center gap-2 bg-white/10 border border-white/10 text-primary-300 text-xs font-bold tracking-wider px-5 py-2.5 rounded-full mb-8">
             <ShieldCheck className="w-3.5 h-3.5" />
-            뚜러배관케어의 약속
+            배관구조대의 약속
           </span>
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white/80 mb-4">
@@ -38,7 +38,7 @@ export default function Guarantee() {
             미해결시 <span className="neon-amber">₩0</span>
           </h3>
           <p className="text-white/65 max-w-lg mx-auto leading-relaxed text-lg">
-            뚜러배관케어는 고객님의 문제를 완벽하게 해결할 때까지 책임집니다.
+            배관구조대는 고객님의 문제를 완벽하게 해결할 때까지 책임집니다.
             해결하지 못하면 비용을 청구하지 않습니다.
           </p>
         </div>
