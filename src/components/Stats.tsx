@@ -8,58 +8,46 @@ export default function Stats() {
   const ref = useReveal();
 
   const stats = [
-    { value: "99.2%", label: "문제 해결 성공률", icon: TrendingUp, iconBg: "bg-primary-500", cardBg: "bg-primary-500", isHighlight: true },
-    { value: "10,000+", label: "누적 해결 건수", icon: Users, iconBg: "bg-navy-800", cardBg: "bg-navy-800", isHighlight: true },
-    { value: "98.6%", label: "재이용 의향률", icon: CheckCircle2, iconBg: "bg-emerald-500", cardBg: "bg-white", isHighlight: false },
-    { value: "30분", label: "평균 출동 시간", icon: Clock, iconBg: "bg-primary-400", cardBg: "bg-white", isHighlight: false },
-    { value: "24시간", label: "연중무휴 운영", icon: Award, iconBg: "bg-amber-500", cardBg: "bg-white", isHighlight: false },
-    { value: "5.0", label: "고객 만족도", icon: Star, iconBg: "bg-amber-500", cardBg: "bg-white", isHighlight: false },
+    { value: "99.2%", label: "문제 해결 성공률", icon: TrendingUp, color: "text-primary-500", bg: "bg-primary-50", border: "border-primary-200" },
+    { value: "10,000+", label: "누적 해결 건수", icon: Users, color: "text-amber-600", bg: "bg-amber-50", border: "border-amber-200" },
+    { value: "98.6%", label: "재이용 의향률", icon: CheckCircle2, color: "text-emerald-600", bg: "bg-emerald-50", border: "border-emerald-200" },
+    { value: "30분", label: "평균 출동 시간", icon: Clock, color: "text-primary-600", bg: "bg-primary-50", border: "border-primary-200" },
+    { value: "24시간", label: "연중무휴 운영", icon: Award, color: "text-navy-700", bg: "bg-navy-50", border: "border-navy-200" },
+    { value: "5.0", label: "고객 만족도", icon: Star, color: "text-amber-600", bg: "bg-amber-50", border: "border-amber-200" },
   ];
 
   return (
-    <section ref={ref} className="relative overflow-hidden bg-white py-24 sm:py-32">
-      <div className="absolute inset-0 cross-pattern opacity-40" />
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary-200 to-transparent" />
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary-200 to-transparent" />
-      <div className="absolute top-0 right-0 w-[30%] h-[50%] bg-primary-50/50 blur-[80px] pointer-events-none" />
+    <section ref={ref} className="relative overflow-hidden bg-navy-900 py-24 sm:py-32">
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-0 left-0 w-[40%] h-[40%] bg-primary-400/5 rounded-full blur-[120px]" />
+        <div className="absolute bottom-0 right-0 w-[30%] h-[30%] bg-amber-500/5 rounded-full blur-[100px]" />
+      </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="reveal text-center mb-14">
-          <span className="inline-flex items-center gap-2 bg-primary-50 text-primary-500 text-sm font-bold tracking-[0.1em] uppercase px-5 py-2.5 rounded-full border border-primary-100 mb-6">
+          <span className="inline-flex items-center gap-2 bg-white/10 border border-white/10 text-primary-300 text-sm font-bold tracking-[0.1em] uppercase px-5 py-2.5 rounded-full mb-6">
             <TrendingUp className="w-4 h-4" />
             수치로 증명합니다
           </span>
-          <h2 className="section-title section-accent mx-auto w-fit">
-            <span className="text-gradient-animate">배관구조대</span>의 실적
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white">
+            <span className="text-primary-300">배관구조대</span>의 실적
           </h2>
         </div>
 
-        <div className="stagger grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-5">
+        <div className="stagger grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4">
           {stats.map((s, i) => (
             <div
               key={i}
-              className={`group relative rounded-3xl p-6 sm:p-8 overflow-hidden transition-all duration-300 ${
-                s.isHighlight
-                  ? `${s.cardBg} text-white shadow-lg`
-                  : "bg-white border-2 border-surface-200 hover:border-primary-200 hover:shadow-md"
-              }`}
+              className="group relative rounded-2xl sm:rounded-3xl bg-white p-5 sm:p-7 text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
             >
-              <div className="relative z-10">
-                <div className={`w-10 h-10 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center mb-4 sm:mb-5 ${
-                  s.isHighlight ? "bg-white/20" : s.iconBg
-                }`}>
-                  <s.icon className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
-                </div>
-                <div className={`text-3xl sm:text-4xl md:text-5xl font-black mb-1 tracking-tight whitespace-nowrap ${
-                  s.isHighlight ? "text-white" : "text-navy-900"
-                }`}>
-                  {s.value}
-                </div>
-                <div className={`text-xs sm:text-sm font-semibold ${
-                  s.isHighlight ? "text-white/80" : "text-navy-400"
-                }`}>
-                  {s.label}
-                </div>
+              <div className={`w-12 h-12 sm:w-14 sm:h-14 rounded-2xl ${s.bg} ${s.border} border flex items-center justify-center mx-auto mb-4`}>
+                <s.icon className={`w-6 h-6 sm:w-7 sm:h-7 ${s.color}`} />
+              </div>
+              <div className={`text-2xl sm:text-3xl md:text-4xl font-black mb-1 tracking-tight text-navy-900`}>
+                {s.value}
+              </div>
+              <div className="text-xs sm:text-sm font-semibold text-navy-400">
+                {s.label}
               </div>
             </div>
           ))}
@@ -73,8 +61,8 @@ export default function Stats() {
               </div>
             ))}
           </div>
-          <p className="text-navy-300 text-sm">
-            배관구조대는 <span className="text-primary-500 font-bold">결과</span>로 신뢰를 증명합니다
+          <p className="text-white/60 text-sm">
+            배관구조대는 <span className="text-primary-300 font-bold">결과</span>로 신뢰를 증명합니다
           </p>
         </div>
       </div>
