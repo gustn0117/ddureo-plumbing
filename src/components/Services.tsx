@@ -8,7 +8,7 @@ const services = [
   { icon: Wrench, title: "변기·싱크대 막힘", desc: "물 내려가는 속도가 더디거나 악취, 역류할 때! 전문 장비로 즉시 해결합니다.", accent: "from-primary-400 to-primary-600", tag: "BEST", tagColor: "bg-primary-400", image: "/images/toilet.jpg" },
   { icon: Building2, title: "상가 배관막힘", desc: "식당, 공공기관 등 많은 분들이 방문하시는 곳의 배관 문제를 해결합니다.", accent: "from-amber-400 to-amber-600", tag: null, tagColor: "", image: "/images/work-outdoor.jpeg" },
   { icon: Home, title: "주택·아파트 배관", desc: "반복되는 막힘, 노후배관 문제를 근본적으로 해결해드립니다.", accent: "from-emerald-400 to-emerald-600", tag: null, tagColor: "", image: "/images/sink-repair.jpeg" },
-  { icon: Factory, title: "공장·산업시설", desc: "대형 산업시설 배관도 전문 장비로 확실하게 해결합니다.", accent: "from-navy-600 to-navy-800", tag: null, tagColor: "", image: "/images/ridgid-equipment.jpeg" },
+  { icon: Factory, title: "공장·산업시설", desc: "대형 산업시설 배관도 전문 장비로 확실하게 해결합니다.", accent: "from-navy-600 to-navy-800", tag: null, tagColor: "", image: "/images/factory-pipes.jpg" },
   { icon: Droplets, title: "누수 탐지·수리", desc: "보이지 않는 누수, 최신 탐지 장비로 정확히 찾아냅니다.", accent: "from-primary-500 to-primary-700", tag: "NEW", tagColor: "bg-emerald-500", image: "/images/pressure-gauge.jpeg" },
 ];
 

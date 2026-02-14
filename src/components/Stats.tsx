@@ -8,12 +8,12 @@ export default function Stats() {
   const ref = useReveal();
 
   const stats = [
-    { value: "99.2%", label: "문제 해결 성공률", icon: TrendingUp, color: "from-primary-400 to-primary-300" },
-    { value: "10,000+", label: "누적 해결 건수", icon: Users, color: "from-amber-400 to-amber-500" },
-    { value: "98.6%", label: "재이용 의향률", icon: CheckCircle2, color: "from-emerald-400 to-emerald-500" },
-    { value: "30분", label: "평균 출동 시간", icon: Clock, color: "from-primary-300 to-primary-500" },
-    { value: "24시간", label: "연중무휴 운영", icon: Award, color: "from-amber-500 to-amber-400" },
-    { value: "5.0", label: "고객 만족도", icon: Star, color: "from-amber-400 to-amber-300" },
+    { value: "99.2%", label: "문제 해결 성공률", icon: TrendingUp, iconBg: "bg-primary-500", cardBg: "bg-primary-500", isHighlight: true },
+    { value: "10,000+", label: "누적 해결 건수", icon: Users, iconBg: "bg-navy-800", cardBg: "bg-navy-800", isHighlight: true },
+    { value: "98.6%", label: "재이용 의향률", icon: CheckCircle2, iconBg: "bg-emerald-500", cardBg: "bg-white", isHighlight: false },
+    { value: "30분", label: "평균 출동 시간", icon: Clock, iconBg: "bg-primary-400", cardBg: "bg-white", isHighlight: false },
+    { value: "24시간", label: "연중무휴 운영", icon: Award, iconBg: "bg-amber-500", cardBg: "bg-white", isHighlight: false },
+    { value: "5.0", label: "고객 만족도", icon: Star, iconBg: "bg-amber-500", cardBg: "bg-white", isHighlight: false },
   ];
 
   return (
@@ -34,36 +34,29 @@ export default function Stats() {
           </h2>
         </div>
 
-        <div className="stagger grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-5">
+        <div className="stagger grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-5">
           {stats.map((s, i) => (
             <div
               key={i}
-              className={`group relative rounded-3xl p-7 sm:p-8 overflow-hidden ${
-                i === 0 ? "bg-navy-900 text-white col-span-2 md:col-span-1 noise-bg tilt-hover" :
-                i === 1 ? "bg-gradient-to-br from-primary-400 to-primary-500 text-white gradient-animate tilt-hover" :
-                "bg-surface-50 border border-surface-300/50 card-lift hover-glow gradient-border-hover"
+              className={`group relative rounded-3xl p-6 sm:p-8 overflow-hidden transition-all duration-300 ${
+                s.isHighlight
+                  ? `${s.cardBg} text-white shadow-lg`
+                  : "bg-white border-2 border-surface-200 hover:border-primary-200 hover:shadow-md"
               }`}
             >
-              {i === 0 && (
-                <>
-                  <div className="absolute top-0 right-0 w-40 h-40 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2" />
-                  <div className="absolute bottom-0 left-0 w-24 h-24 bg-primary-400/10 rounded-full translate-y-1/2 -translate-x-1/3" />
-                </>
-              )}
-              {i === 1 && (
-                <div className="absolute top-0 right-0 w-36 h-36 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2" />
-              )}
               <div className="relative z-10">
-                <div className={`w-11 h-11 rounded-xl flex items-center justify-center mb-5 ${
-                  i === 0 || i === 1 ? "bg-white/15 backdrop-blur-sm" : `bg-gradient-to-br ${s.color} shadow-sm`
+                <div className={`w-10 h-10 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center mb-4 sm:mb-5 ${
+                  s.isHighlight ? "bg-white/20" : s.iconBg
                 }`}>
-                  <s.icon className="w-5 h-5 text-white" />
+                  <s.icon className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                 </div>
-                <div className={`text-4xl sm:text-5xl font-black mb-1.5 tracking-tight ${i > 1 ? "text-navy-900" : ""}`}>
+                <div className={`text-3xl sm:text-4xl md:text-5xl font-black mb-1 tracking-tight whitespace-nowrap ${
+                  s.isHighlight ? "text-white" : "text-navy-900"
+                }`}>
                   {s.value}
                 </div>
-                <div className={`text-sm font-medium ${
-                  i === 0 ? "text-white/70" : i === 1 ? "text-white/85" : "text-navy-400"
+                <div className={`text-xs sm:text-sm font-semibold ${
+                  s.isHighlight ? "text-white/80" : "text-navy-400"
                 }`}>
                   {s.label}
                 </div>
