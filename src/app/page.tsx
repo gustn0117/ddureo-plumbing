@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
-import Inspection from "@/components/Inspection";
+
 import Guarantee from "@/components/Guarantee";
 import Stats from "@/components/Stats";
 import Process from "@/components/Process";
@@ -21,7 +21,7 @@ export default function Home() {
       <Services />
       <BeforeAfter />
       <Process />
-      <Inspection />
+
       <Guarantee />
       <Coverage />
       <Reviews />
