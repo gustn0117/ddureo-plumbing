@@ -34,7 +34,7 @@ export default function Contact() {
 
             <p className="text-white/90 text-lg mb-4 font-medium">지금 전화하시면 출장비 무료!</p>
 
-            <a href="tel:01039712272" className="block text-5xl sm:text-6xl md:text-7xl font-black text-white leading-none mb-4 hover:scale-[1.02] transition-transform duration-300 origin-left">
+            <a href="tel:01039712272" className="block text-[2rem] sm:text-6xl md:text-7xl font-black text-white leading-none mb-4 hover:scale-[1.02] transition-transform duration-300 origin-left">
               010-3971-2272
             </a>
 
@@ -56,8 +56,8 @@ export default function Contact() {
             </div>
 
             <div className="flex items-center gap-2 text-white/70 text-xs">
-              <Shield className="w-3.5 h-3.5" />
-              상담 전화는 무료이며, 개인정보는 안전하게 보호됩니다.
+              <Shield className="w-3.5 h-3.5 flex-shrink-0" />
+              <span><span className="inline-block">상담 전화는 무료이며,</span>{" "}<span className="inline-block">개인정보는 안전하게 보호됩니다.</span></span>
             </div>
           </div>
         </div>
