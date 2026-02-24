@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ClickGuard from "@/components/ClickGuard";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -25,7 +26,10 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        <ClickGuard />
+        {children}
+      </body>
     </html>
   );
 }
