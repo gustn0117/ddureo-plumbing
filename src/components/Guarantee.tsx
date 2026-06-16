@@ -63,7 +63,7 @@ export default function Guarantee() {
         </div>
 
         <div className="reveal text-center">
-          <a href="tel:01039712272" className="group inline-flex items-center gap-3 bg-gradient-to-r from-primary-400 to-primary-500 hover:from-primary-300 hover:to-primary-400 text-white font-bold py-5 px-12 rounded-full transition-all duration-300 hover:shadow-glow-lg">
+          <a href="tel:01082104289" className="group inline-flex items-center gap-3 bg-gradient-to-r from-primary-400 to-primary-500 hover:from-primary-300 hover:to-primary-400 text-white font-bold py-5 px-12 rounded-full transition-all duration-300 hover:shadow-glow-lg">
             <Phone className="w-5 h-5" />
             무료 견적 받기
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

@@ -32,7 +32,7 @@ export default function Services() {
               <span className="text-gradient-animate">확실하게 해결</span>합니다.
             </h2>
           </div>
-          <a href="tel:01039712272" className="group inline-flex items-center gap-2 bg-navy-900 hover:bg-navy-800 text-white font-bold py-3.5 px-7 rounded-full transition-all duration-300 self-start lg:self-auto hover:shadow-elevated">
+          <a href="tel:01082104289" className="group inline-flex items-center gap-2 bg-navy-900 hover:bg-navy-800 text-white font-bold py-3.5 px-7 rounded-full transition-all duration-300 self-start lg:self-auto hover:shadow-elevated">
             <Phone className="w-4 h-4" />
             전체 서비스 상담
             <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
@@ -59,7 +59,7 @@ export default function Services() {
               <div className="p-7">
                 <h3 className="text-xl font-bold text-navy-800 mb-2.5">{s.title}</h3>
                 <p className="text-navy-400 text-sm leading-relaxed mb-5">{s.desc}</p>
-                <a href="tel:01039712272" className="inline-flex items-center gap-2 text-primary-500 font-bold text-sm group/link hover:gap-3 transition-all">
+                <a href="tel:01082104289" className="inline-flex items-center gap-2 text-primary-500 font-bold text-sm group/link hover:gap-3 transition-all">
                   <Phone className="w-4 h-4" />
                   상담하기
                   <ArrowUpRight className="w-3.5 h-3.5 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform" />

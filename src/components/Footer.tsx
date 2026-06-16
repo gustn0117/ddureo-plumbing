@@ -23,9 +23,9 @@ export default function Footer() {
             </div>
 
             <div className="flex flex-wrap items-center gap-4 text-sm text-white/60 mb-6">
-              <a href="tel:01039712272" className="flex items-center gap-1.5 hover:text-primary-300 transition-colors">
+              <a href="tel:01082104289" className="flex items-center gap-1.5 hover:text-primary-300 transition-colors">
                 <Phone className="w-3.5 h-3.5" />
-                010-3971-2272
+                010-8210-4289
               </a>
               <div className="w-px h-3 bg-white/10" />
               <a href="mailto:fe21501@naver.com" className="flex items-center gap-1.5 hover:text-primary-300 transition-colors">
@@ -60,7 +60,7 @@ export default function Footer() {
               ))}
             </div>
             <a
-              href="tel:01039712272"
+              href="tel:01082104289"
               className="group flex items-center gap-2 glass text-white font-bold py-2.5 px-5 rounded-full text-sm hover:bg-white/15 transition-all"
             >
               <Phone className="w-4 h-4" />

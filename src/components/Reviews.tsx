@@ -133,7 +133,7 @@ export default function Reviews() {
               <span className="inline-block">금액을 받지 않습니다!</span>
             </p>
           </div>
-          <a href="tel:01039712272" className="inline-flex items-center gap-2 bg-primary-400 hover:bg-primary-300 text-white font-bold py-3 px-6 rounded-full transition-all duration-300 text-sm hover:shadow-glow">
+          <a href="tel:01082104289" className="inline-flex items-center gap-2 bg-primary-400 hover:bg-primary-300 text-white font-bold py-3 px-6 rounded-full transition-all duration-300 text-sm hover:shadow-glow">
             상담하기
             <ArrowUpRight className="w-4 h-4" />
           </a>

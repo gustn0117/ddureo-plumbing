@@ -41,7 +41,7 @@ export default function Inspection() {
 
             <div className="flex flex-wrap items-center gap-4">
               <a
-                href="tel:01039712272"
+                href="tel:01082104289"
                 className="group inline-flex items-center gap-3 bg-white text-primary-600 font-bold text-base py-4 px-8 rounded-full hover:shadow-dramatic transition-all duration-300"
               >
                 무료 검사 예약

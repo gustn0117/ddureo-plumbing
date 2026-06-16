@@ -59,7 +59,7 @@ export default function Header() {
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-2">
             <a
-              href="tel:01039712272"
+              href="tel:01082104289"
               className={`group flex items-center gap-2 font-bold py-2.5 px-5 rounded-full transition-all duration-300 text-sm ${
                 scrolled
                   ? "bg-gradient-to-r from-primary-400 to-primary-500 text-white hover:shadow-glow"
@@ -67,7 +67,7 @@ export default function Header() {
               }`}
             >
               <Phone className="w-4 h-4" />
-              <span>010-3971-2272</span>
+              <span>010-8210-4289</span>
               <ArrowUpRight className="w-3.5 h-3.5 opacity-50 group-hover:opacity-100 transition-opacity" />
             </a>
           </div>
@@ -100,11 +100,11 @@ export default function Header() {
             ))}
             <div className="h-px bg-surface-200 my-2" />
             <div className="flex gap-2 px-2">
-              <a href="tel:01039712272" className="flex-1 flex items-center justify-center gap-2 bg-gradient-to-r from-primary-400 to-primary-500 text-white font-bold py-3 rounded-xl text-sm">
+              <a href="tel:01082104289" className="flex-1 flex items-center justify-center gap-2 bg-gradient-to-r from-primary-400 to-primary-500 text-white font-bold py-3 rounded-xl text-sm">
                 <Phone className="w-4 h-4" />
                 전화상담
               </a>
-              <a href="sms:01039712272" className="flex-1 flex items-center justify-center gap-2 bg-navy-800 text-white font-bold py-3 rounded-xl text-sm">
+              <a href="sms:01082104289" className="flex-1 flex items-center justify-center gap-2 bg-navy-800 text-white font-bold py-3 rounded-xl text-sm">
                 <MessageCircle className="w-4 h-4" />
                 문자상담
               </a>

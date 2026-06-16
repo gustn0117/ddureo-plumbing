@@ -146,15 +146,15 @@ export default function Hero() {
           {/* CTA */}
           <div className="flex flex-col sm:flex-row justify-center gap-2.5 sm:gap-3 px-2">
             <a
-              href="tel:01039712272"
+              href="tel:01082104289"
               className="group relative inline-flex items-center justify-center gap-2.5 sm:gap-3 bg-white hover:bg-white/90 text-primary-700 font-bold text-base sm:text-lg py-4 sm:py-5 px-8 sm:px-10 rounded-full transition-colors shadow-xl shadow-black/20"
             >
               <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
-              <span>010-3971-2272</span>
+              <span>010-8210-4289</span>
               <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 opacity-50" />
             </a>
             <a
-              href="sms:01039712272"
+              href="sms:01082104289"
               className="inline-flex items-center justify-center gap-2.5 sm:gap-3 bg-white/10 border border-white/25 hover:bg-white/20 text-white font-bold text-base sm:text-lg py-4 sm:py-5 px-8 sm:px-10 rounded-full transition-colors"
             >
               <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -184,7 +184,7 @@ export default function Hero() {
                 <span className="inline-block">— 출장비 무료</span>
               </span>
             </div>
-            <a href="tel:01039712272" className="text-white/80 hover:text-white text-xs sm:text-sm font-medium transition-colors flex items-center gap-1">
+            <a href="tel:01082104289" className="text-white/80 hover:text-white text-xs sm:text-sm font-medium transition-colors flex items-center gap-1">
               자세히 보기 <ArrowRight className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
             </a>
           </div>

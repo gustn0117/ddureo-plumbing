@@ -34,8 +34,8 @@ export default function Contact() {
 
             <p className="text-white/90 text-lg mb-4 font-medium">지금 전화하시면 출장비 무료!</p>
 
-            <a href="tel:01039712272" className="block text-[2rem] sm:text-6xl md:text-7xl font-black text-white leading-none mb-4 hover:scale-[1.02] transition-transform duration-300 origin-left">
-              010-3971-2272
+            <a href="tel:01082104289" className="block text-[2rem] sm:text-6xl md:text-7xl font-black text-white leading-none mb-4 hover:scale-[1.02] transition-transform duration-300 origin-left">
+              010-8210-4289
             </a>
 
             <a href="mailto:fe21501@naver.com" className="inline-flex items-center gap-2 text-white/80 text-sm mb-8 hover:text-white transition-colors">
@@ -83,12 +83,12 @@ export default function Contact() {
             </p>
 
             <div className="space-y-3 mb-10">
-              <a href="tel:01039712272" className="group w-full flex items-center justify-center gap-3 bg-gradient-to-r from-primary-400 to-primary-500 hover:from-primary-300 hover:to-primary-400 text-white font-bold text-lg py-5 px-8 rounded-2xl transition-all duration-300 hover:shadow-glow-lg">
+              <a href="tel:01082104289" className="group w-full flex items-center justify-center gap-3 bg-gradient-to-r from-primary-400 to-primary-500 hover:from-primary-300 hover:to-primary-400 text-white font-bold text-lg py-5 px-8 rounded-2xl transition-all duration-300 hover:shadow-glow-lg">
                 <Phone className="w-5 h-5" />
                 긴급상담 전화하기
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </a>
-              <a href="sms:01039712272" className="w-full flex items-center justify-center gap-3 bg-white/15 border border-white/10 text-white font-bold text-lg py-5 px-8 rounded-2xl transition-all duration-300 hover:bg-white/[0.15]">
+              <a href="sms:01082104289" className="w-full flex items-center justify-center gap-3 bg-white/15 border border-white/10 text-white font-bold text-lg py-5 px-8 rounded-2xl transition-all duration-300 hover:bg-white/[0.15]">
                 <MessageCircle className="w-5 h-5" />
                 문자상담
               </a>

@@ -62,10 +62,10 @@ export default function Process() {
         </div>
 
         <div className="reveal text-center mt-16">
-          <a href="tel:01039712272" className="group inline-flex items-center gap-3 bg-gradient-to-r from-primary-400 to-primary-500 hover:from-primary-300 hover:to-primary-400 text-white font-bold py-4 px-10 rounded-full transition-all duration-300 hover:shadow-glow-lg">
+          <a href="tel:01082104289" className="group inline-flex items-center gap-3 bg-gradient-to-r from-primary-400 to-primary-500 hover:from-primary-300 hover:to-primary-400 text-white font-bold py-4 px-10 rounded-full transition-all duration-300 hover:shadow-glow-lg">
             <Phone className="w-5 h-5" />
             지금 전화하기
-            <span className="text-white/70 text-sm">010-3971-2272</span>
+            <span className="text-white/70 text-sm">010-8210-4289</span>
           </a>
         </div>
       </div>
