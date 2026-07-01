@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 
 const STORAGE_KEY = "cg_data";
-const MAX_VISITS = 10; // 1시간 내 최대 방문 수
+const MAX_VISITS = 5; // 1시간 내 최대 방문 수
 const MAX_CTA_CLICKS = 5; // 1시간 내 최대 CTA 클릭 수
 const TIME_WINDOW = 60 * 60 * 1000; // 1시간
 

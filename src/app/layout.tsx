@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import ClickGuard from "@/components/ClickGuard";
+import NaverWcs from "@/components/NaverWcs";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -27,6 +29,24 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body className="antialiased">
+        {/* Smartlog 분석 스크립트 */}
+        <Script id="smartlog-config" strategy="afterInteractive">
+          {`var hpt_info={'_account':'UHPT-300514', '_server': 'a300'};`}
+        </Script>
+        <Script
+          id="smartlog-core"
+          src="//cdn.smlog.co.kr/core/smart_renew.js"
+          strategy="afterInteractive"
+        />
+        <noscript>
+          <img
+            src="//a300.smlog.co.kr/smart_bda?_account=300514"
+            style={{ display: "none", width: 0, height: 0 }}
+            alt=""
+          />
+        </noscript>
+        {/* 네이버 검색광고 로그분석 + 전환(lead) 추적 */}
+        <NaverWcs />
         <ClickGuard />
         {children}
       </body>
